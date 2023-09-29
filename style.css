@@ -14,27 +14,25 @@ You will find this is far easier than the opposite task of using CSS to cram you
 /*********************************************************************
   YOUR MOBILE/BASE STYLES GO HERE
 *********************************************************************/
-/* This is what is called a reset. Different browsers have different default padding and margins. Using the * reserts all depault elements to have zero padding and margin. */
-
 * {
     box-sizing: border-box;
 }
 
-
-
-body,
-html {
+html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
-    font-family: 'Quicksand', sans-serif;
-
 }
 
-
-
 body {
-    background-color: greenyellow;
+    background-color: cornsilk;
     margin: 20px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+    padding: 10px;
 }
 
 img{
@@ -42,33 +40,9 @@ img{
     width: 100%;
 }
 
-
-.flex{
-    background-color: orange;
+.lead_photo{
+    max-width: 75%;
 }
-
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: whitesmoke;
-}
-
-
-.container.photo {
-    padding: 0;
-    max-width: 400px;
-}
-
-figure {
-    background-color: lightblue;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 5px;
-}
-
 
 .flex{
     padding: 10px;
@@ -78,60 +52,42 @@ figure {
     padding: 10px;
 }
 
-
-
-
-figcaption {
-    margin: 0;
-    font-size: 0.9rem;
-    color: 3333;
+.iconhed{
+    color:darkgray;
+    text-align: center;
 }
 
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
 @media(min-width: 681px) {
-    
-    /*ADD HERE*/
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
 
+.flex{
+    display: flex;
 }
 
+
+.flex > div{
+    flex-basis: 20%;
+}
+
+
+
+
+
+}
 
 /*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-@media(min-width: 780px) {
-
-    /*ADD HERE*/
-
-    .flex{
-        display: flex;
-        justify-content: space-evenly;
-
-    }
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
 
 
-    .flex > div{
-        flex-basis: 20%;
-        background-color: navajowhite;
-    }
 
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
